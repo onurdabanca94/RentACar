@@ -10,6 +10,8 @@
     <Folder Include="Features\Brands\Constants\" />
     <Folder Include="Features\Brands\Rules\" />
     <Folder Include="Features\CarModels\Commands\" />
+    <Folder Include="Features\CarModels\Constants\" />
+    <Folder Include="Features\CarModels\Rules\" />
   </ItemGroup>
 
   <ItemGroup>
