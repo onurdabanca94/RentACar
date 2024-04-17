@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Features\Brands\Constants\" />
+    <Folder Include="Features\Brands\Rules\" />
+    <Folder Include="Features\CarModels\Commands\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.0" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="Core.Application">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.Application\bin\Debug\net8.0\Core.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Persistance">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.Persistance\bin\Debug\net8.0\Core.Persistance.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>
