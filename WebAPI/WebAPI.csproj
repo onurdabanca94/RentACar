@@ -13,6 +13,7 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
+    <PackageReference Include="System.Linq.Dynamic.Core" Version="1.3.14" />
   </ItemGroup>
 
   <ItemGroup>
@@ -23,6 +24,12 @@
   <ItemGroup>
     <Reference Include="Core.Application">
       <HintPath>..\..\..\corePackages\Core.Packages\Core.Application\bin\Debug\net8.0\Core.Application.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.CrossCuttingConcerns">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.CrossCuttingConcerns\bin\Debug\net8.0\Core.CrossCuttingConcerns.dll</HintPath>
+    </Reference>
+    <Reference Include="Core.Persistance">
+      <HintPath>..\..\..\corePackages\Core.Packages\Core.Persistance\bin\Debug\net8.0\Core.Persistance.dll</HintPath>
     </Reference>
   </ItemGroup>
 
