@@ -24,8 +24,8 @@ if (app.Environment.IsDevelopment())
 
 
 //Production ortamýnda kýsa hata detayýný göster kuralý eklemiþ olduk.
-//if (app.Environment.IsProduction())
-app.ConfigureCustomExceptionMiddleware();
+if (app.Environment.IsProduction())
+    app.ConfigureCustomExceptionMiddleware();
 
 app.UseHttpsRedirection();
 
