@@ -18,6 +18,8 @@ public class GetListBrandQuery : IRequest<GetListResponse<GetListBrandListItemDt
     public bool BypassCache { get; }
     public TimeSpan? SlidingExpiration { get; }
 
+    public string? CacheGroupKey => "GetBrands";
+
     public class GetListBrandQueryHandler : IRequestHandler<GetListBrandQuery, GetListResponse<GetListBrandListItemDto>>
     {
         private readonly IBrandRepository _brandRepository;
