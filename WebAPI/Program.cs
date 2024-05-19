@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllers();
 builder.Services.AddApplicationServices();
 builder.Services.AddPersistenceServices(builder.Configuration);
+builder.Services.AddHttpContextAccessor();
 
 //builder.Services.AddDistributedMemoryCache(); //inmemory.
 
@@ -29,8 +30,8 @@ if (app.Environment.IsDevelopment())
 
 
 //Production ortamýnda kýsa hata detayýný göster kuralý eklemiþ olduk.
-if (app.Environment.IsProduction())
-    app.ConfigureCustomExceptionMiddleware();
+//if (app.Environment.IsProduction())
+app.ConfigureCustomExceptionMiddleware();
 
 app.UseHttpsRedirection();
 
