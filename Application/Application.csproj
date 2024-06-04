@@ -10,6 +10,9 @@
     <Folder Include="Features\CarModels\Commands\" />
     <Folder Include="Features\CarModels\Constants\" />
     <Folder Include="Features\CarModels\Rules\" />
+    <Folder Include="Features\Users\Commands\Delete\" />
+    <Folder Include="Features\Users\Commands\Update\" />
+    <Folder Include="Features\Users\Queries\" />
   </ItemGroup>
 
   <ItemGroup>
